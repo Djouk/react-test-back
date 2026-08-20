@@ -1,0 +1,41 @@
+{
+  "name": "react-test-back",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ace serve --hmr",
+    "build": "node ace build",
+    "start": "node build/bin/server.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "imports": {
+    "#config/*": "./config/*.js",
+    "#exceptions/*": "./app/exceptions/*.js",
+    "#middleware/*": "./app/middleware/*.js",
+    "#start/*": "./start/*.js"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^6.19.0",
+    "@adonisjs/cors": "^2.2.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^7.8.2",
+    "@adonisjs/eslint-config": "^3.1.0",
+    "@adonisjs/prettier-config": "^1.5.0",
+    "@adonisjs/tsconfig": "^1.4.0",
+    "@swc/core": "^1.16.1",
+    "@types/node": "^22.13.1",
+    "eslint": "^9.20.1",
+    "hot-hook": "^1.0.0",
+    "prettier": "^3.9.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "prettier": "@adonisjs/prettier-config"
+}
