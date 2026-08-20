@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node ace serve --hmr",
     "build": "node ace build",
-    "start": "node build/bin/server.js",
+    "start": "node --env-file-if-exists=.env build/bin/server.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ."
   },

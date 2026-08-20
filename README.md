@@ -30,6 +30,16 @@ AdonisJS TypeScript API for the `diogodeandrade.com.br` profile project.
 
 The API listens on `HOST` and `PORT`, defaulting to `0.0.0.0:3333`.
 
+To run the compiled production build locally:
+
+```bash
+npm run build
+npm run start
+```
+
+`npm run start` loads `.env` from the repository root when it exists. In deployed
+environments, provide the same variables through the host environment instead.
+
 ## Smoke Endpoints
 
 - `GET /` returns the API name and status.

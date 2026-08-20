@@ -12,6 +12,12 @@ export default defineConfig({
     () => import('#start/routes'),
     () => import('#start/kernel'),
   ],
+  metaFiles: [
+    {
+      pattern: 'adonisrc.js',
+      reloadServer: false,
+    },
+  ],
   tests: {
     suites: [],
   },
